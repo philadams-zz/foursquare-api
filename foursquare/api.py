@@ -25,7 +25,7 @@ class Foursquare(object):
 
     The id parameter is the resource id; if blank, 'self' will be used.
     """
-    API_BASE_URI = 'http://api.foursquare.com/v2'
+    API_BASE_URI = 'https://api.foursquare.com/v2'
 
     def __init__(self, auth=None, resource=None, aspect=None):
         """
