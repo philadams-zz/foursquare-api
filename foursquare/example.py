@@ -9,7 +9,8 @@ if __name__ == '__main__':
     # say hello and ask for foursquare email/phone
     print('Foursquare API')
     print('--------------\n')
-    username = raw_input('Email associated with your Foursquare account: ').strip()
+    prompt = 'Email associated with your Foursquare account'
+    username = raw_input('%s: ' % prompt).strip()
 
     # build oauth obj, do oauth_dance if oath_token not available
     oauth_fname = '%s.token' % username

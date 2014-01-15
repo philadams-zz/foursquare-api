@@ -2,18 +2,21 @@ import urllib
 import urllib2
 import json
 
+
 class FoursquareCall(object):
     pass
+
 
 class Foursquare(object):
     """
     A minimalist Foursquare API v2 class.
 
-    The Foursquare v2 is structured by resources and aspects, and optional params:
-    http://api.foursquare.com/v2/RESOURCE/RESOURCE_ID/ASPECT?key1=val1&...
-        e.g. http://api.foursquare.com/v2/users/12345
-        e.g. http://api.foursquare.com/v2/users/12345/checkins?limit=10
-    See http://developer.foursquare.com for details.
+    The Foursquare v2 is structured by resources and aspects, and optional
+    params:
+        http://api.foursquare.com/v2/RESOURCE/RESOURCE_ID/ASPECT?key1=val1&...
+        e.g. http://api.foursquare.com/v2/users/12345 e.g.
+        http://api.foursquare.com/v2/users/12345/checkins?limit=10 See
+        http://developer.foursquare.com for details.
 
     Data is available by accessing class members; the data is returned as
     normal Python data objects (lists and dictionaries).
